@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("../public/fonts/Coolvetica\ Rg.otf");
+}
+
+@font-face {
+  font-family: "UniNeue";
+  src: url("../public/fonts/UniNeue-Trial-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Insanibu";
+  src: url("../public/fonts/Insanibc.ttf");
+}
+
+@font-face {
+  font-family: "Coolvetica-It";
+  src: url("../public/fonts/Coolvetica\ Rg\ It.otf");
+}
+
+
+@font-face {
+  font-family: "AF";
+  src: url("../public/fonts/AbrilFatface-Regular.otf");
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main-quote{
+  margin-top: 2%;
+  font-size: 5vw;
+  line-height: .8;
+  font-family: "Coolvetica";
+}
+
+
+.header-item {
+  font-family: "UniNeue";
+  font-size: 1.5vw;
+
+}
+
+.header-title {
+  font-family: "Coolvetica";
+  font-size: 3vw;
+
+}
+
+button, .signup {
+  font-family: "Coolvetica";
+  font-size: 3vw;
+}
