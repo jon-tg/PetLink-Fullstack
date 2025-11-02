@@ -64,3 +64,24 @@ button, .signup {
   font-family: "Coolvetica";
   font-size: 3vw;
 }
+
+.gray-input {
+  width: 100%;
+  max-width: 200px;
+  padding: 9px 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.gray-input:focus {
+  background-color: #fff;
+  border-color: #a8a8a8;
+}
+
+.input-field {
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
