@@ -12,19 +12,19 @@ public class Shelter {
     @Column(name = "id")
     private int shelterID;
 
-    @Column(length = 50)
+    @Column(length = 50, nullable = false)
     private String name;
 
-    @Column(length = 50)
+    @Column(length = 50, nullable = false, unique = true)
     private String email;
 
-    @Column(length = 50)
+    @Column(length = 50, nullable = false)
     private String address;
 
     @Column(length = 50)
     private String state;
 
-    @Column(length = 50)
+    @Column(nullable = false)
     private String password;
 
     public Shelter() {

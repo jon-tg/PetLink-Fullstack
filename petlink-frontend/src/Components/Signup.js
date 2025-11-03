@@ -12,7 +12,7 @@ export default function Signup() {
         let name = form.name.value;
         let password = form.password.value;
 
-        fetch("http://localhost:8080/api/users", {
+        fetch("http://localhost:8080/api/users/add", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({email, password, name})
@@ -28,7 +28,7 @@ export default function Signup() {
         let state = form.state.value;
         let password = form.password.value;
 
-        fetch("http://localhost:8080/api/shelters", {
+        fetch("http://localhost:8080/api/shelters/add", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({name, email, address, state, password})
@@ -41,7 +41,7 @@ export default function Signup() {
         
             <div className='flex items-center self-center h-[70vh] justify-center justify-self-center'>
                 <div className=''>
-                    <img src="./images/petcollage2.png" style={{width: "850px", height: "550px"}}></img>
+                    <img src="./images/petcollage2.png" style={{width: "900px", height: "450px"}}></img>
                 </div>
 
                 <div className='flex flex-col flex-wrap w-[35%] max-xl:mr-[5%]'>

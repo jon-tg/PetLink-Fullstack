@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 @Table(name = "users")
 public class User {
 
-    @Column(length = 50)
+    @Column(length = 50, nullable = false)
     private String name;
 
     @Id
@@ -15,10 +15,10 @@ public class User {
     @Column(name = "id")
     private int userID;
 
-    @Column(length = 50)
+    @Column(length = 50, nullable = false, unique = true)
     private String email;
 
-    @Column(length = 50)
+    @Column(nullable = false)
     private String password;
 
     public User() {}

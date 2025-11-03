@@ -10,21 +10,21 @@ public class Pet {
     @Column(name = "id")
     private int petID;
 
-    @Column(length = 50)
+    @Column(length = 50, nullable = false)
     private String name;
 
-    @Column(length = 50)
+    @Column(length = 50, nullable = false)
     private String species;
 
-    @Column(length = 50)
+    @Column(length = 50, nullable = false)
     private String breed;
 
     private int age;
 
-    @Column(length = 50)
+    @Column(length = 50, nullable = false)
     private String temperament;
     
-    @Column(length = 10)
+    @Column(length = 10, nullable = false)
     private String status;
 
     @Column(name = "shelterId")
