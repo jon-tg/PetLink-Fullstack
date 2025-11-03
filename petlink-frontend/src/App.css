@@ -7,6 +7,10 @@
   margin-bottom: 0;
 }
 
+html {
+  font-size: 15px;
+}
+
 
 @font-face {
   font-family: "Coolvetica";
@@ -42,7 +46,7 @@
 
 .main-quote{
   margin-top: 2%;
-  font-size: 5vw;
+  font-size: clamp(5rem, 5vw, 5.5rem);
   line-height: .8;
   font-family: "Coolvetica";
 }
@@ -50,19 +54,19 @@
 
 .header-item {
   font-family: "UniNeue";
-  font-size: 1.5vw;
+  font-size: clamp(1.8rem, .5vw, 2.1rem);
 
 }
 
 .header-title {
   font-family: "Coolvetica";
-  font-size: 3vw;
+  font-size: clamp(3rem, 3vw, 3.5rem);
 
 }
 
 button, .signup {
   font-family: "Coolvetica";
-  font-size: 3vw;
+  font-size: 30px;
 }
 
 .gray-input {
@@ -81,7 +85,7 @@ button, .signup {
   border-color: #a8a8a8;
 }
 
-.input-field {
-  margin-top: -30px;
-  margin-bottom: -30px;
+
+#main-button {
+    line-height: 1;
 }

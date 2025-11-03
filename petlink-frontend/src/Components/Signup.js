@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import Navbar from "./Navbar.js"
 
 export default function Signup() {
@@ -39,14 +39,14 @@ export default function Signup() {
         <div className='signup'>
             <Navbar/>
         
-            <div className='flex items-center self-center w-[70%] h-[70vh] justify-center justify-self-center'>
-                <div className>
-                    <img src="./images/petcollage2.png" style={{width: "65vw", height: "50vh"}}></img>
+            <div className='flex items-center self-center h-[70vh] justify-center justify-self-center'>
+                <div className=''>
+                    <img src="./images/petcollage2.png" style={{width: "850px", height: "550px"}}></img>
                 </div>
 
-                <div className='flex flex-col w-[35%]'>
+                <div className='flex flex-col flex-wrap w-[35%] max-xl:mr-[5%]'>
 
-                    {formType == null && (
+                    {formType === null && (
                      <div>
                      <h1 className='text-3xl mb-2'>Select Registration Type</h1>
 
@@ -61,7 +61,7 @@ export default function Signup() {
                     </div>
                     )}
 
-                    {formType == "user" && (
+                    {formType === "user" && (
                     <form onSubmit={addUser}>
                         <h1 className='text-3xl mb-2'>User Signup Form</h1>
 
@@ -71,7 +71,7 @@ export default function Signup() {
                         <div className='input-field'>
                             <input id="email" name="email" type="text" placeholder="Enter email" className="gray-input ml-1 text-sm"/>
                         </div>
-                        <div className='input-field'>
+                        <div className='input-field mb-[-20px]'>
                             <input id="password" name="password" type="password"  placeholder="Enter password" className="gray-input ml-1 text-sm"/>
                         </div>
                         <div className="mt-1 flex justify-self-center justify-end gap-x-6">
@@ -85,7 +85,7 @@ export default function Signup() {
                     </form>
                     )}
 
-                    {formType == "shelter" && (
+                    {formType === "shelter" && (
                     <form onSubmit={addShelter}>
                         <h1 className='text-3xl mb-2'>Shelter Registration</h1>
 
@@ -103,7 +103,7 @@ export default function Signup() {
                         <div className='input-field'>
                             <input id="state" name="state" type="text" placeholder="Enter state" className="gray-input ml-1 text-sm"/>
                         </div>
-                        <div className='input-field'>
+                        <div className='input-field mb-[-20px]'>
                             <input id="password" name="password" type="password"  placeholder="Enter password" className="gray-input ml-1 text-sm"/>
                         </div>
                         <div className="mt-1 flex justify-self-center justify-end gap-x-6">

@@ -17,7 +17,7 @@ public class UserController {
     @GetMapping
     public List<User> list() { return repo.findAll(); }
 
-    @PostMapping
+    @PostMapping("/add")
     public User create(@RequestBody User u) {
         if (repo.findByEmail(u.getEmail()).isEmpty()) { return repo.save(u); }
         else {return null;}

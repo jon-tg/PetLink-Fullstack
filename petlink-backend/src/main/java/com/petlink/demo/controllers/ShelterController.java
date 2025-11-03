@@ -17,7 +17,7 @@ public class ShelterController {
     @GetMapping
     public List<Shelter> list() { return repo.findAll(); }
 
-    @PostMapping
+    @PostMapping("/add")
     public Shelter create(@RequestBody Shelter s) {
         if (repo.findByAddress(s.getAddress()).isEmpty() && repo.findByEmail(s.getEmail()).isEmpty()) { return repo.save(s); }
         else {return null;}
